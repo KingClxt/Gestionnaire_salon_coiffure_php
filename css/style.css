@@ -1,0 +1,648 @@
+*,::after,::before{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'VintageParty';
+    src: url(../police/VintageParty-FreeVersion.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Gatalike';
+    src: url(../police/Gatalike_Personal\ Use.ttf);
+}
+@font-face {
+    font-family: 'Fredericy';
+    src: url(../police/Fredericy.ttf);
+}
+@font-face {
+    font-family: 'Americanism';
+    src: url(../police/Americanism.ttf);
+}
+@font-face {
+    font-family: 'popins';
+    src: url(../police/Poppins-Bold.ttf);
+}
+body{
+    overflow-x: hidden;
+}
+.modale-site{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 200;
+    right: -50%;
+    top: 7rem;
+    font-family: 'popins';
+    font-size: 1.1rem;
+    padding: 5px 25px;
+    background: white;
+    border-radius: 4px;
+}
+.modale-site.change{
+    transition: 1s;
+    background: #000;
+    color: white;
+}
+.close-btn{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    font-weight: bold;
+}
+.modale-site.change .close-btn{
+    color: white;
+}
+.modale-site p{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.header-site{
+    position: relative;
+    height: auto;
+    background-image: url(../img/2150286050.jpg);
+    background-position-x: 0%;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-site{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.60;
+}
+.titre-site{
+    font-size: 2.3rem;
+    font-family: 'Gatalike';
+}
+.nav-site{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.765);
+    transition: 1s;
+}
+.nav-site.fixe{
+    position: fixed;
+    background: #000;
+    left: 0;
+    z-index: 300;
+    top: 0;
+    right: 0;
+}
+.navbar-nav li:last-child{
+    /* border: 2px solid #e6da05e2; */
+    background: linear-gradient(to right, #fff200e2, #fff536e2);
+    border-radius: 999px;
+    padding: 0 10px;
+}
+.cont-header{
+    position: relative;
+    color: white;
+    height: 100%;
+    padding: 6rem 0;
+}
+.flex-left{
+    max-width: 700px;
+    margin-left: 6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-left span{
+    font-size: 4rem;
+    font-family: 'Americanism';
+    display: block;
+    color: #f1e50be2;
+}
+.flex-left h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:'popins';
+}
+.flex-left button{
+    display: block;
+    padding: 8px 45px;
+    background: #faee01e2;
+    border: 2px solid #faee01e2;
+    font-size: 19px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'popins';
+    transition: .4s;
+}
+.flex-left button:hover{
+    border: 2px solid #e6da05e2;
+    background: #e6da05e2;
+}
+.flex-left p{
+    font-family: 'popins';
+    font-weight: bold;
+}
+.nous-comprenons{
+    margin: 7rem 8rem 13rem;
+    height: 100%;
+}
+.cont-nous-left{
+    display: flex;
+    justify-content: end;
+    flex-basis: 50%;
+}
+.cont-nous-left img{
+    width: 40%;
+    /* height: 420px; */
+}
+.cont-nous-left img:last-child{
+    margin: 0 1.9rem 0 1.5rem;
+    position: relative;
+    top: 5rem;
+}
+.cont-nous-right{
+    padding: 10px 20px;
+    flex-basis: 50%;
+    background: rgba(128, 128, 128, 0.141);
+}
+.cont-nous-right span{
+    font-family: 'Americanism';
+    font-size: 3rem;
+    position: relative;
+    top: 10px;
+}
+.cont-nous-right span::after{
+    content: "";
+    display: block;
+    width: 120%;
+    height: 4px;
+    background: #f1e50be2;
+    border-radius: 999px;
+    margin: 10px 0;
+    bottom: -10px;
+    position: absolute;
+}
+.cont-nous-right .titre{
+    text-transform: uppercase;
+    font-family:'popins';
+    font-style: italic;
+}
+
+/* realisation */
+.nos-realisation, .nos-services{
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.141);
+}
+.nos-realisation span, .nos-services span{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-family: Americanism;
+    font-size: 4rem;
+}
+.nos-realisation span::after, .nos-services span::after{
+    content: "";
+    display: block;
+    width: 18%;
+    margin: 0 auto;
+    height: 4px;
+    background: #f1e50be2;
+    border-radius: 999px;
+    bottom: 20px;
+    
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.nos-realisation .text, .nos-services .text{
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.nos-realisation .titre, .nos-services .titre{
+    position: relative;
+    top: -10px;
+    text-align: center;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-family:'popins';
+    font-style: italic;
+}
+.cont-realisation{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.realisation{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    font-family: 'popins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffffe2;
+    font-size: 1.5rem;
+    border-radius:100%;
+    margin: 0 5px;
+    overflow: hidden;
+}
+.realisation p{
+    position: relative;
+    z-index: 2;
+}
+.bg-realisation, .bg-service{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: #000;
+}
+.realisation1{
+    background-image: url(../img/f50bc2bac36362e9cf6aa0bb502840ed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.realisation2{
+    background-image: url(../img/L21lZGlhLXBhL1dMMTcvMS80L1dMMTcxNDQ3OTM4XzEuanBlZz8yMDIzMDcwNTEwMTMyMw_rct.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.realisation3{
+    background-image: url(../img/163c28f5c8fb9a0b463338f76fdb90b4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.realisation4{
+    background-image: url(../img/4ddf33487874608001c6eb05ee6be441.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Nos coiffeurs */
+.nos-coiffeurs{
+    margin: 5rem 0;
+}
+.nos-coiffeurs span{
+    font-size: 3.5rem;
+    display: block;
+    font-family: 'Americanism';
+    text-align: center;
+    position: relative;
+    /* top: 10px; */
+}
+.nos-coiffeurs span::after{
+    content: "";
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+    height: 4px;
+    background: #f1e50be2;
+    border-radius: 999px;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.nos-coiffeurs .titre{
+    font-size: 2.7rem;
+    font-family: 'popins';
+    text-align: center;
+    margin: 0 0 2rem;
+    font-style: italic;
+}
+
+.cont-coiffeurs{
+    display: flex;
+    justify-content: center;
+}
+.coiffeur{
+    width: 380px;
+    border-radius: 5px;
+    margin: 0 15px;
+    padding: 10px 10px 25px;
+    border: 1px solid rgba(128, 128, 128, 0.297);
+    cursor: pointer;
+    transition: .4s;
+}
+.coiffeur:hover{
+    transform: scale(1.03);
+}
+.coiffeur img{
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+}
+.coiffeur .nom{
+    font-family: 'popins';
+    font-style: italic;
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+/* Service */
+
+.service1{
+    background-image: url(../img/Comment-prendre-soin-de-sa-coloration-végétale.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service2{
+    background-image: url(../img/permante.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service3{
+    background-image: url(../img/shutterstock-1227139510.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service4{
+    background-image: url(../img/soins_capillaires_salon_1024x.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Nous contacter */
+.nous-contacter{
+    max-width: 1100px;
+    width: 100%;
+    background: linear-gradient(180deg, #f9f047e2, #f3e705e2) ;
+    margin: 7rem auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 70px;
+}
+.nous-contacter .cont-left{
+    width: 50%;
+}
+.nous-contacter .cont-left img{
+    width: 100%;
+}
+.nous-contacter .cont-right .titre{
+    font-family: 'popins';
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    background-clip: text;
+    font-style: italic;
+}
+.form-contact label{
+    margin-left: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+.form-contact .nom, .form-contact .prenom{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    outline: none;
+    background: transparent;
+}
+.form-contact .email{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    outline: none;
+    background: transparent;
+}
+
+/* Temoins */
+
+.temoins{
+    margin: 7rem 0 6rem;
+}
+.temoins span{
+    font-family: 'Americanism';
+    font-size: 3.5rem;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.temoins span::after{
+    content: "";
+    display: block;
+    width: 5%;
+    margin: 0 auto;
+    height: 4px;
+    background: #f1e50be2;
+    border-radius: 999px;
+    bottom: 2px;
+    
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.temoins .titre{
+    font-family: 'popins';
+    text-align: center;
+    font-size: 2.7rem;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.cont-temoins{
+    display: flex;
+    justify-content: center;
+}
+.temoin{
+    flex-basis: 30%;
+    margin: 0 10px;
+}
+.temoin .date{
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #cec407e2;
+}
+.temoin .text{
+    height: 7.2rem;
+    margin: 20px 0;
+}
+.temoin .photo-temoin{
+    display: flex;
+    align-items: center;
+}
+.cont-photo{
+    padding: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.273);
+    border-radius: 50%;
+}
+.temoin .photo-temoin p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+}
+.temoin .photo-temoin .cont-photo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.titre-footer{
+    font-size: 2.3rem;
+    font-family: 'Gatalike';
+    color: #fff30ae2;
+}
+
+
+@media screen and (max-width:995px) {
+    .flex-left{
+        margin: 0 auto;
+    }
+    .flex-left h1{
+        text-align: center;
+    }
+    .flex-left span{
+        text-align: center;
+    }
+    .flex-left button{
+        margin: 10px auto 0;
+    }
+    .flex-left p{
+        text-align: center;
+    }
+    .nous-comprenons{
+        margin-left: 5rem;
+        margin-top: 5rem;
+    }
+    .cont-nous-left img:last-child{
+        position: static;
+        margin: 0 0 0 3px;
+    }
+    .nos-realisation span, .nos-services span{
+        font-size: 3rem;
+    }
+    .nos-realisation .titre, .nos-services .titre{
+        font-size: 2rem;
+    }
+    .realisation{
+        width: 250px;
+        height: 250px;
+    }
+    .realisation p{
+        font-size: 1rem;
+    }
+    .coiffeur{
+        margin: 0 5px;
+        width: 300px;
+    }
+    .coiffeur img{
+        width: 100%;
+        height: 300px;
+    }
+    .coiffeur:hover{
+        transform: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .flex-left span{
+        font-size: 3.5rem;
+        font-family: 'Americanism';
+        display: block;
+        color: #f1e50be2;
+    }
+    .flex-left h1{
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family:'popins';
+    }
+    .flex-left button{
+        font-size: 15px;
+    }
+    .nous-comprenons{
+        margin: 5rem 1rem 5rem;
+    }
+    .cont-nous-right{
+        flex-basis: 100%;
+    }
+    .nos-realisation span, .nos-services span{
+        font-size: 2.5rem;
+    }
+    .nos-realisation span::after, .nos-services span::after{
+        bottom: 10px;
+    }
+    .nos-realisation .titre, .nos-services .titre{
+        font-size: 1.5rem;
+    }
+    .realisation{
+        width: 190px;
+        height: 190px;
+    }
+    .realisation p{
+        font-size: 0.8rem;
+    }
+    .nous-contacter .cont-left{
+        display: none;
+    }
+    .nous-contacter .cont-right .titre{
+        font-size: 2rem;
+    }
+    .temoins span{
+        font-size: 3rem;
+    }
+    .temoins .titre{
+        font-size: 2rem;
+    }
+    .cont-temoins{
+        display: flex;
+        flex-direction: column;
+    }
+    .temoin .date{
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    .temoin .text{
+        height: 2rem;
+        margin: 70px 0;
+    }
+}
+
+@media screen and (max-width:604px) {
+    .flex-left span{
+        font-size: 3rem;
+        font-family: 'Americanism';
+        display: block;
+        color: #f1e50be2;
+    }
+    .flex-left h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family:'popins';
+    }
+    .flex-left button{
+        font-size: 13px;
+    }
+    .realisation{
+        width: 100px;
+        height: 100px;
+    }
+    .realisation p{
+        font-size: 0.5rem;
+    }
+    .cont-coiffeurs{
+        flex-direction: column;
+    }
+    .coiffeur{
+        width: 100%;
+        
+    }
+}

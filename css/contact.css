@@ -1,0 +1,134 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Americanism';
+    src: url(../police/Americanism.ttf);
+}
+@font-face {
+    font-family: 'popins';
+    src: url(../police/Poppins-Bold.ttf);
+}
+.acceuil{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.cont-left{
+    position: relative;
+    background-image: linear-gradient(to right top, #fdf43d, #fff879e2);
+    overflow: hidden;
+}
+.bg-left{
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    background-size: cover;
+    background-position: 100% 50%;
+    background-image: url(../img/1210522.svg);
+}
+.row-cont{
+    height: 100vh;
+}
+.cont-left{
+    height: auto;
+}
+.cont-left span{
+    position: relative;
+    z-index: 3;
+    font-size: 4rem;
+    font-family: 'Americanism';
+    position: relative;
+    top: 20px;
+}
+.titre-left{
+    position: relative;
+    z-index: 3;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-family: 'popins';
+}
+.titre-right{
+    font-family: 'popins';
+    font-size: 3rem;
+}
+.cont-left p{
+    position: relative;
+    z-index: 3;
+}
+.form-connexion {
+    margin: 0 4rem;
+}
+/* .cont-inp{
+    position: relative;
+} */
+.form-connexion input, select{
+    width: 100%;
+    padding: 13px 10px 13px 41px;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px 0;
+    border: 2px solid #fffb08;
+    /* box-shadow: 1px 1px 20px rgba(99, 99, 99, 0.171); */
+}
+.cont-inp{
+    position: relative;
+}
+.form-connexion select{
+    color: rgb(107, 106, 106);
+    background: white;
+}
+.form-connexion .cont-inp img{
+    position: absolute;
+    top: 35%;
+    left: 3.7%;
+    height: 25px;
+    transform: translateY(-19%);
+}
+.btn-connexion{
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px auto;
+    display: block;
+    border-radius: 999px;
+    padding: 10px 90px;
+    
+    background: linear-gradient(to right, rgb(0, 115, 255), rgb(57, 189, 249) );
+}
+.disabled-btn{
+    background: gray;
+}
+.btn-acceuil{
+    background: linear-gradient(to right, rgb(0, 115, 255), rgb(57, 189, 249) );
+    color: white;
+    font-weight: bold;
+    display: block;
+    border-radius: 999px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.ligne{
+    height: 3px;
+    border-radius: 999px;
+    background: #fffb08;
+    width: 38%;
+}
+@media screen and (max-width:619px) {
+    .text-mdp{
+        font-size: 0.8rem;
+    }
+    .titre-right{
+        font-size: 2rem;
+    }
+    .ligne{
+        width: 30%;
+    }
+    .btn-connexion{
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+}

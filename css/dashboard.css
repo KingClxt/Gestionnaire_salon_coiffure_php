@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'popins';
+    src: url(../police/Poppins-Bold.ttf);
+}
+main{
+    height: auto !important;
+    overflow-y: visible !important;
+}
+body{
+    background: rgba(77, 76, 76, 0.06);
+}
+.cont-dashboard{
+    margin-top: 1rem;
+}
+.header-profil{
+    background: #0081ff;
+    text-transform: uppercase;
+}
+.cont-bvn{
+    padding: 34px 23px 20px;
+    width: 96%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #0081ff, #91dbfb);
+}
+.cont-bvn .cont-img{
+    flex-basis: 50%;
+}
+.cont-bvn img{
+    /*margin-right: 3rem;*/
+    width: 60%;
+}
+.cont-titre .titre{
+    font-family: popins;
+    margin: 0;
+
+}
+.cont-info{
+    justify-content: space-around;
+    margin-top: 1rem;
+    display: flex;
+}
+.cont-info-user .info{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, #0051e8, #68d5fd);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    display: flex;
+    color: white;
+    font-family: popins;
+    font-size: 0.73rem;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont-info-user p{
+    margin: 0;
+}
+.cont-rdv-rec h2{
+    font-family: popins;
+}
+.titre{
+    font-family: popins;
+}
+.annonce{
+    padding: 34px 23px 20px;
+    width: 96%;
+    margin: 0 auto;
+    color: white;
+    height: auto;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #0081ff, #a6e2fb);
+}
+.annonce h2{
+    font-family: popins;
+    font-size: 1.8rem;
+}
+.annonce .cont-right{
+    display: flex;
+    justify-content: end;
+}
+.annonce .cont-right img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1255px) {
+    .cont-left{
+        width: 60% !important;
+    }
+    .cont-right{
+        width: 30% !important;
+    }
+}
+@media screen and (max-width: 1163px){
+    .cont-dashboard{
+        flex-direction: column;
+        width: 100%;
+    }
+    .cont-left{
+        width: 100% !important;
+    }
+    .cont-right{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 1041px) {
+    .cont-info-user .info{
+        width: 100px;
+        height: 100px;
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 854px){
+    .cont-info-user .info{
+        font-size: 0.5rem;
+        width: 80px;
+        height: 80px;
+    }
+}

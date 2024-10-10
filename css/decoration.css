@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'popins';
+    src: url(../police/Poppins-Bold.ttf);
+}
+.cont-info{
+    display: flex;
+
+}
+.info{
+    color: white;
+    font-family: 'popins';
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #0768ff 10%, #7ebcf8);
+    width: 100%;
+    font-size: 1.5rem;
+    height: 100px;
+}
+h1{
+    font-family: popins;
+    text-transform: uppercase;
+}
